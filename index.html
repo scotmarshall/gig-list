@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gig List — Local Music Tracker</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    
+    <!-- Vue 3 CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <!-- Our styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1>🎸 <span class="highlight">Gig List</span></h1>
+                <p class="subtitle">Live music near you — {{ getUpcomingCount }} upcoming shows</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container">
+            <!-- FILTERS SECTION -->
+            <section class="filters">
+                <div class="filter-group">
+                    <label for="genreFilter">🎵 Genre</label>
+                    <select id="genreFilter" v-model="selectedGenre">
+                        <option value="all">All Genres</option>
+                        <option v-for="genre in uniqueGenres" :key="genre" :value="genre">
+                            {{ genre }}
+                        </option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="venueFilter">🏢 Venue</label>
+                    <select id="venueFilter" v-model="selectedVenue">
+                        <option value="all">All Venues</option>
+                        <option v-for="venue in uniqueVenues" :key="venue" :value="venue">
+                            {{ venue }}
+                        </option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="dateFilter">📅 Date</label>
+                    <input type="date" id="dateFilter" v-model="selectedDate" />
+                </div>
+
+                <button class="btn btn-secondary" @click="clearFilters">Clear Filters</button>
+            </section>
+
+            <!-- GIGS LIST -->
+            <section class="gigs-list">
+                <div v-if="filteredGigs.length === 0" class="empty-state">
+                    <p>😕 No gigs match your filters</p>
+                    <button class="btn btn-primary" @click="clearFilters">Show all gigs</button>
+                </div>
+
+                <div v-for="gig in filteredGigs" :key="gig.id" class="gig-card">
+                    <div class="gig-header">
+                        <h2>{{ gig.artistName }}</h2>
+                        <span class="genre-badge">{{ gig.genre }}</span>
+                    </div>
+                    
+                    <div class="gig-details">
+                        <p class="venue">
+                            <span class="icon">📍</span> {{ gig.venueName }}
+                            <span class="venue-location">— {{ gig.venueLocation }}</span>
+                        </p>
+                        <p class="date">
+                            <span class="icon">📅</span> {{ formatDate(gig.date) }}
+                        </p>
+                        <p class="capacity" v-if="gig.venueCapacity">
+                            <span class="icon">👥</span> Capacity: {{ gig.venueCapacity }}
+                        </p>
+                    </div>
+
+                    <div class="gig-actions">
+                        <button class="btn btn-small" @click="toggleFavorite(gig.id)">
+                            {{ gig.isFavorite ? '⭐ Favorited' : '☆ Add to Favorites' }}
+                        </button>
+                        <span class="gig-id">#{{ gig.id }}</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>Built with ❤️ and Vue 3 — Data stored locally</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Our Vue Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
