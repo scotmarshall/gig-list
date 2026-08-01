@@ -202,6 +202,46 @@ const gigData = [
         date: "2026-08-27",
         time: "19:00",        // 7:00 PM
         isFavorite: false
+    },
+    {
+        id: 21,
+        artistName: "BEN SHEEN (organ)",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-08-05",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
+    },
+    {
+        id: 22,
+        artistName: "EMILY WANG (cello) AND PETER DUMSDAY (piano)",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-08-12",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
+    },
+    {
+        id: 23,
+        artistName: "ANDERSON MOKIYU (countertenor)",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-08-19",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
+    },
+    {
+        id: 23,
+        artistName: "BRIANNA ELLINGHAM (piano)",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-08-26",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
     }
 ];
 
