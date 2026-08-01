@@ -197,7 +197,7 @@ body {
 
 .gig-details {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;  /* Two columns */
     gap: 6px 24px;
     margin-bottom: 14px;
     font-size: 0.95rem;

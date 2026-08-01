@@ -5,62 +5,202 @@ const { createApp, ref, computed } = Vue;
 const gigData = [
     {
         id: 1,
-        artistName: "The Midnight Echoes",
+        artistName: "OLIVIA COGGAN",
         genre: "Indie Rock",
-        venueName: "The Velvet Lounge",
-        venueLocation: "Downtown, 123 Main St",
-        venueCapacity: 150,
-        date: "2026-08-15",
+        venueName: "Hotel Esplanade (aka The Espy)",
+        venueLocation: "St Kilda, 11 The Esplanade",
+        date: "2026-08-06",
+        time: "19:30",        // 7:30 PM
         isFavorite: false
     },
     {
         id: 2,
-        artistName: "Jazz Collective",
-        genre: "Jazz",
-        venueName: "Blue Note Bar",
-        venueLocation: "West End, 45 Jazz Ave",
-        venueCapacity: 80,
-        date: "2026-08-18",
-        isFavorite: true
+        artistName: "DAVID M WESTERN. KYLE BREW",
+        genre: "Indie Rock",
+        venueName: "Lulie Tavern",
+        venueLocation: "Abbotsford, 225 Johnston St",
+        date: "2026-08-06",
+        time: "19:00",        // 7:00 PM
+        isFavorite: false
     },
     {
         id: 3,
-        artistName: "Synthwave Dreams",
-        genre: "Electronic",
-        venueName: "Neon Warehouse",
-        venueLocation: "Arts District, 88 Electric Blvd",
-        venueCapacity: 300,
-        date: "2026-08-22",
+        artistName: "NO HOPER + CRANING",
+        genre: "Indie Rock",
+        venueName: "John Curtin Hotel",
+        venueLocation: "Carlton, 29 Lygon St",
+        date: "2026-08-08",
+        time: "15:00",        // 3:00 PM
         isFavorite: false
     },
     {
         id: 4,
-        artistName: "Acoustic Sessions",
-        genre: "Folk",
-        venueName: "The Velvet Lounge",
-        venueLocation: "Downtown, 123 Main St",
-        venueCapacity: 150,
-        date: "2026-08-25",
+        artistName: "FM3 Ft: Acadalius, Sussiguala, Reductionist, Aday, KOshowKo (DJ Set)",
+        genre: "Indie Rock",
+        venueName: "Brunswick Artists' Bar",
+        venueLocation: "Brunswick, 316 Sydney Rd",
+        date: "2026-08-08",
+        time: "20:30",        // 8:30 PM
         isFavorite: false
     },
     {
         id: 5,
-        artistName: "Funk Fusion Band",
-        genre: "Funk",
-        venueName: "The Groove Yard",
-        venueLocation: "East Side, 77 Rhythm St",
-        venueCapacity: 200,
-        date: "2026-09-01",
+        artistName: "FOLKIE Ft: Thom Johnston",
+        genre: "Folk",
+        venueName: "Ragtime Tavern",
+        venueLocation: "Preston, 206 Tyler St",
+        date: "2026-08-08",
+        time: "18:30",        // 6:30 PM
         isFavorite: false
     },
     {
         id: 6,
-        artistName: "Classical Quartet",
-        genre: "Classical",
-        venueName: "Concert Hall",
-        venueLocation: "City Center, 100 Symphony Way",
-        venueCapacity: 500,
-        date: "2026-09-05",
+        artistName: "STELLA ANNING TRIO",
+        genre: "Indie Rock",
+        venueName: "Brunswick Artists' Bar",
+        venueLocation: "Brunswick, 316 Sydney Rd",
+        date: "2026-08-13",
+        time: "20:30",        // 8:30 PM
+        isFavorite: false
+    },
+    {
+        id: 7,
+        artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
+        genre: "Indie Rock",
+        venueName: "The Merri Bar",
+        venueLocation: "Preston, 15 Gilbert Road",
+        date: "2026-08-13",
+        time: "19:00",        // 7:00 PM
+        isFavorite: false
+    },
+    {
+        id: 8,
+        artistName: "TOAD. SUNDAY LIVINGSTONE, KRAZY SALT",
+        genre: "Indie Rock",
+        venueName: "Brunswick Artists' Bar",
+        venueLocation: "Brunswick, 316 Sydney Rd",
+        date: "2026-08-14",
+        time: "20:30",        // 8:30 PM
+        isFavorite: false
+    },
+    {
+        id: 9,
+        artistName: "DREA JORDANE",
+        genre: "Indie Rock",
+        venueName: "Hotel Esplanade (aka The Espy)",
+        venueLocation: "St Kilda, 11 The Esplanade",
+        date: "2026-08-14",
+        time: "19:30",        // 7:30 PM
+        isFavorite: false
+    },
+    {
+        id: 10,
+        artistName: "DOMA Ft: DJ Dem Large, Koletsas, Sammie",
+        genre: "Indie Rock",
+        venueName: "The Vic Bar",
+        venueLocation: "Abbotsford, 281 Victoria St",
+        date: "2026-08-15",
+        time: "19:00",        // 7:00 PM
+        isFavorite: false
+    },
+    {
+        id: 11,
+        artistName: "CERES WINTER TWILIGHT MARKET",
+        genre: "Folk",
+        venueName: "CERES Community Environment Park",
+        venueLocation: "Brunswick, Corner of Roberts St & Stewart St",
+        date: "2026-08-15",
+        time: "12:00",        // 12:00 PM
+        isFavorite: false
+    },
+    {
+        id: 12,
+        artistName: "PINKO COLLECTIVE",
+        genre: "Indie Rock",
+        venueName: "Bar 303",
+        venueLocation: "Northcote, 303 High St",
+        date: "2026-08-15",
+        time: "15:30",        // 3:30 PM
+        isFavorite: false
+    },
+    {
+        id: 13,
+        artistName: "MICHAELEAH. ABENY, PAIGE MCSMITH",
+        genre: "Indie Rock",
+        venueName: "Brunswick Artists' Bar",
+        venueLocation: "Brunswick, 316 Sydney Rd",
+        date: "2026-08-15",
+        time: "16:30",        // 4:30 PM
+        isFavorite: false
+    },
+    {
+        id: 14,
+        artistName: "THOM JOHNSTON",
+        genre: "Folk",
+        venueName: "The Merri Bar",
+        venueLocation: "Preston, 15 Gilbert Road",
+        date: "2026-08-15",
+        time: "19:00",        // 7:00 PM
+        isFavorite: false
+    },
+    {
+        id: 15,
+        artistName: "DAVID M WESTERN. CHARLOTTE LE LIEVRUE",
+        genre: "Indie Rock",
+        venueName: "Lulie Tavern",
+        venueLocation: "Abbotsford, 225 Johnston St",
+        date: "2026-08-20",
+        time: "19:00",        // 7:00 PM
+        isFavorite: false
+    },
+    {
+        id: 16,
+        artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
+        genre: "Indie Rock",
+        venueName: "The Merri Bar",
+        venueLocation: "Preston, 15 Gilbert Road",
+        date: "2026-08-20",
+        time: "19:00",        // 7:00 PM
+        isFavorite: false
+    },
+    {
+        id: 17,
+        artistName: "STELLA ANNING TRIO",
+        genre: "Indie Rock",
+        venueName: "Brunswick Artists' Bar",
+        venueLocation: "Brunswick, 316 Sydney Rd",
+        date: "2026-08-20",
+        time: "20:30",        // 8:30 PM
+        isFavorite: false
+    },
+    {
+        id: 18,
+        artistName: "VIVA LA DISCOTECA",
+        genre: "Indie Rock",
+        venueName: "Brunswick Artists' Bar",
+        venueLocation: "Brunswick, 316 Sydney Rd",
+        date: "2026-08-21",
+        time: "20:00",        // 8:00 PM
+        isFavorite: true
+    },
+    {
+        id: 19,
+        artistName: "JOSHUA BATTEN BAND",
+        genre: "Indie Rock",
+        venueName: "Brunswick Artists' Bar",
+        venueLocation: "Brunswick, 316 Sydney Rd",
+        date: "2026-08-22",
+        time: "16:30",        // 4:30 PM
+        isFavorite: false
+    },
+    {
+        id: 20,
+        artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
+        genre: "Indie Rock",
+        venueName: "The Merri Bar",
+        venueLocation: "Preston, 15 Gilbert Road",
+        date: "2026-08-27",
+        time: "19:00",        // 7:00 PM
         isFavorite: false
     }
 ];
@@ -95,14 +235,15 @@ const app = createApp({
 
         // Filter the gigs based on all selected filters
         const filteredGigs = computed(() => {
-            return gigs.value.filter(gig => {
+            // STEP 1: Filter the gigs
+            const filtered = gigs.value.filter(gig => {
                 // Genre filter
                 const matchesGenre = selectedGenre.value === 'all' || 
-                                     gig.genre === selectedGenre.value;
+                                    gig.genre === selectedGenre.value;
                 
                 // Venue filter
                 const matchesVenue = selectedVenue.value === 'all' || 
-                                     gig.venueName === selectedVenue.value;
+                                    gig.venueName === selectedVenue.value;
                 
                 // Date filter (if a date is selected)
                 let matchesDate = true;
@@ -112,7 +253,25 @@ const app = createApp({
                 
                 return matchesGenre && matchesVenue && matchesDate;
             });
-        });
+
+            // STEP 2: Sort the filtered results
+            return filtered.sort((a, b) => {
+                // First, compare dates
+                const dateA = new Date(a.date);
+                const dateB = new Date(b.date);
+                
+                if (dateA < dateB) return -1;  // a is earlier
+                if (dateA > dateB) return 1;   // a is later
+                
+                // Dates are equal, compare times
+                // Times are in "HH:MM" format, which sorts lexicographically!
+                if (a.time < b.time) return -1;
+                if (a.time > b.time) return 1;
+                
+                // Dates and times are equal, keep original order
+                return 0;
+            });
+});
 
         // ---- METHODS ----
         const clearFilters = () => {
@@ -139,6 +298,17 @@ const app = createApp({
             });
         };
 
+        // Utility: Format time for display (converts 24h to 12h with AM/PM)
+        const formatTime = (timeString) => {
+            // timeString comes in as "19:30"
+            if (!timeString) return 'TBD';
+    
+            const [hours, minutes] = timeString.split(':').map(Number);
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            const hours12 = hours % 12 || 12;
+            return `${hours12}:${minutes.toString().padStart(2, '0')} ${ampm}`;
+        };
+
         // ---- RETURN ----
         return {
             gigs,
@@ -151,7 +321,8 @@ const app = createApp({
             filteredGigs,
             clearFilters,
             toggleFavorite,
-            formatDate
+            formatDate,
+            formatTime
         };
     }
 });

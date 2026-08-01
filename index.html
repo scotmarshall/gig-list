@@ -20,7 +20,7 @@
         <header class="header">
             <div class="container">
                 <h1>🎸 <span class="highlight">Gig List</span></h1>
-                <p class="subtitle">Live music near you — {{ getUpcomingCount }} upcoming shows</p>
+                <p class="subtitle">Local music in Naarm/Melbourne — {{ getUpcomingCount }} upcoming shows</p>
             </div>
         </header>
 
@@ -77,8 +77,8 @@
                         <p class="date">
                             <span class="icon">📅</span> {{ formatDate(gig.date) }}
                         </p>
-                        <p class="capacity" v-if="gig.venueCapacity">
-                            <span class="icon">👥</span> Capacity: {{ gig.venueCapacity }}
+                        <p class="time">
+                            <span class="icon">🕐</span> {{ formatTime(gig.time) }}
                         </p>
                     </div>
 
