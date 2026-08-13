@@ -5,36 +5,6 @@ const { createApp, ref, computed } = Vue;
 const gigData = [
     {
         id: 1,
-        artistName: "EMILY WANG (cello) AND PETER DUMSDAY (piano)",
-        genre: "Classical",
-        venueName: "St Paul's Cathedral",
-        venueLocation: "Melbourne, 200 Flinders St",
-        date: "2026-08-12",
-        time: "13:00",        // 1:00 PM
-        isFavorite: false
-    },
-    {
-        id: 2,
-        artistName: "STELLA ANNING TRIO",
-        genre: "Indie Rock",
-        venueName: "Brunswick Artists' Bar",
-        venueLocation: "Brunswick, 316 Sydney Rd",
-        date: "2026-08-13",
-        time: "20:30",        // 8:30 PM
-        isFavorite: false
-    },
-    {
-        id: 3,
-        artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
-        genre: "Indie Rock",
-        venueName: "The Merri Bar",
-        venueLocation: "Preston, 15 Gilbert Road",
-        date: "2026-08-13",
-        time: "19:00",        // 7:00 PM
-        isFavorite: false
-    },
-    {
-        id: 4,
         artistName: "TOAD. SUNDAY LIVINGSTONE, KRAZY SALT",
         genre: "Indie Rock",
         venueName: "Brunswick Artists' Bar",
@@ -44,7 +14,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 5,
+        id: 2,
         artistName: "DREA JORDANE",
         genre: "Indie Rock",
         venueName: "Hotel Esplanade (aka The Espy)",
@@ -54,7 +24,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 6,
+        id: 3,
         artistName: "DOMA Ft: DJ Dem Large, Koletsas, Sammie",
         genre: "Indie Rock",
         venueName: "The Vic Bar",
@@ -64,7 +34,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 7,
+        id: 4,
         artistName: "CERES WINTER TWILIGHT MARKET",
         genre: "Folk",
         venueName: "CERES Community Environment Park",
@@ -74,7 +44,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 8,
+        id: 5,
         artistName: "PINKO COLLECTIVE",
         genre: "Indie Rock",
         venueName: "Bar 303",
@@ -84,7 +54,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 9,
+        id: 6,
         artistName: "MICHAELEAH. ABENY, PAIGE MCSMITH",
         genre: "Indie Rock",
         venueName: "Brunswick Artists' Bar",
@@ -94,7 +64,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 10,
+        id: 7,
         artistName: "THOM JOHNSTON",
         genre: "Folk",
         venueName: "The Merri Bar",
@@ -104,7 +74,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 11,
+        id: 8,
         artistName: "ANDERSON MOKIYU (countertenor)",
         genre: "Classical",
         venueName: "St Paul's Cathedral",
@@ -114,7 +84,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 12,
+        id: 9,
         artistName: "DAVID M WESTERN. CHARLOTTE LE LIEVRUE",
         genre: "Indie Rock",
         venueName: "Lulie Tavern",
@@ -124,7 +94,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 13,
+        id: 10,
         artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
         genre: "Indie Rock",
         venueName: "The Merri Bar",
@@ -134,7 +104,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 14,
+        id: 11,
         artistName: "STELLA ANNING TRIO",
         genre: "Indie Rock",
         venueName: "Brunswick Artists' Bar",
@@ -144,7 +114,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 15,
+        id: 12,
         artistName: "VIVA LA DISCOTECA",
         genre: "Indie Rock",
         venueName: "Brunswick Artists' Bar",
@@ -154,7 +124,7 @@ const gigData = [
         isFavorite: true
     },
     {
-        id: 16,
+        id: 13,
         artistName: "JOSHUA BATTEN BAND",
         genre: "Indie Rock",
         venueName: "Brunswick Artists' Bar",
@@ -164,7 +134,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 17,
+        id: 14,
         artistName: "BRIANNA ELLINGHAM (piano)",
         genre: "Classical",
         venueName: "St Paul's Cathedral",
@@ -174,7 +144,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 18,
+        id: 15,
         artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
         genre: "Indie Rock",
         venueName: "The Merri Bar",
