@@ -5,76 +5,6 @@ const { createApp, ref, computed } = Vue;
 const gigData = [
     {
         id: 1,
-        artistName: "TOAD. SUNDAY LIVINGSTONE, KRAZY SALT",
-        genre: "Indie Rock",
-        venueName: "Brunswick Artists' Bar",
-        venueLocation: "Brunswick, 316 Sydney Rd",
-        date: "2026-08-14",
-        time: "20:30",        // 8:30 PM
-        isFavorite: false
-    },
-    {
-        id: 2,
-        artistName: "DREA JORDANE",
-        genre: "Indie Rock",
-        venueName: "Hotel Esplanade (aka The Espy)",
-        venueLocation: "St Kilda, 11 The Esplanade",
-        date: "2026-08-14",
-        time: "19:30",        // 7:30 PM
-        isFavorite: false
-    },
-    {
-        id: 3,
-        artistName: "DOMA Ft: DJ Dem Large, Koletsas, Sammie",
-        genre: "Indie Rock",
-        venueName: "The Vic Bar",
-        venueLocation: "Abbotsford, 281 Victoria St",
-        date: "2026-08-15",
-        time: "19:00",        // 7:00 PM
-        isFavorite: false
-    },
-    {
-        id: 4,
-        artistName: "CERES WINTER TWILIGHT MARKET",
-        genre: "Folk",
-        venueName: "CERES Community Environment Park",
-        venueLocation: "Brunswick, Corner of Roberts St & Stewart St",
-        date: "2026-08-15",
-        time: "12:00",        // 12:00 PM
-        isFavorite: false
-    },
-    {
-        id: 5,
-        artistName: "PINKO COLLECTIVE",
-        genre: "Indie Rock",
-        venueName: "Bar 303",
-        venueLocation: "Northcote, 303 High St",
-        date: "2026-08-15",
-        time: "15:30",        // 3:30 PM
-        isFavorite: false
-    },
-    {
-        id: 6,
-        artistName: "MICHAELEAH. ABENY, PAIGE MCSMITH",
-        genre: "Indie Rock",
-        venueName: "Brunswick Artists' Bar",
-        venueLocation: "Brunswick, 316 Sydney Rd",
-        date: "2026-08-15",
-        time: "16:30",        // 4:30 PM
-        isFavorite: false
-    },
-    {
-        id: 7,
-        artistName: "THOM JOHNSTON",
-        genre: "Folk",
-        venueName: "The Merri Bar",
-        venueLocation: "Preston, 15 Gilbert Road",
-        date: "2026-08-15",
-        time: "19:00",        // 7:00 PM
-        isFavorite: false
-    },
-    {
-        id: 8,
         artistName: "ANDERSON MOKIYU (countertenor)",
         genre: "Classical",
         venueName: "St Paul's Cathedral",
@@ -84,7 +14,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 9,
+        id: 2,
         artistName: "DAVID M WESTERN. CHARLOTTE LE LIEVRUE",
         genre: "Indie Rock",
         venueName: "Lulie Tavern",
@@ -94,7 +24,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 10,
+        id: 3,
         artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
         genre: "Indie Rock",
         venueName: "The Merri Bar",
@@ -104,7 +34,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 11,
+        id: 4,
         artistName: "STELLA ANNING TRIO",
         genre: "Indie Rock",
         venueName: "Brunswick Artists' Bar",
@@ -114,7 +44,17 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 12,
+        id: 5,
+        artistName: "SHINE CAUGHT BLUE",
+        genre: "Experimental",
+        venueName: "Birramung Marr",
+        venueLocation: "Melbourne, Batman Ave",
+        date: "2026-08-21",
+        time: "20:00",        // 8:00 PM
+        isFavorite: true
+    },
+    {
+        id: 6,
         artistName: "VIVA LA DISCOTECA",
         genre: "Indie Rock",
         venueName: "Brunswick Artists' Bar",
@@ -124,7 +64,7 @@ const gigData = [
         isFavorite: true
     },
     {
-        id: 13,
+        id: 7,
         artistName: "JOSHUA BATTEN BAND",
         genre: "Indie Rock",
         venueName: "Brunswick Artists' Bar",
@@ -134,7 +74,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 14,
+        id: 8,
         artistName: "BRIANNA ELLINGHAM (piano)",
         genre: "Classical",
         venueName: "St Paul's Cathedral",
@@ -144,7 +84,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 15,
+        id: 9,
         artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
         genre: "Indie Rock",
         venueName: "The Merri Bar",
