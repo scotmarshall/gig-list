@@ -5,46 +5,6 @@ const { createApp, ref, computed } = Vue;
 const gigData = [
     {
         id: 1,
-        artistName: "ANDERSON MOKIYU (countertenor)",
-        genre: "Classical",
-        venueName: "St Paul's Cathedral",
-        venueLocation: "Melbourne, 200 Flinders St",
-        date: "2026-08-19",
-        time: "13:00",        // 1:00 PM
-        isFavorite: false
-    },
-    {
-        id: 2,
-        artistName: "DAVID M WESTERN. CHARLOTTE LE LIEVRUE",
-        genre: "Indie Rock",
-        venueName: "Lulie Tavern",
-        venueLocation: "Abbotsford, 225 Johnston St",
-        date: "2026-08-20",
-        time: "19:00",        // 7:00 PM
-        isFavorite: false
-    },
-    {
-        id: 3,
-        artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
-        genre: "Indie Rock",
-        venueName: "The Merri Bar",
-        venueLocation: "Preston, 15 Gilbert Road",
-        date: "2026-08-20",
-        time: "19:00",        // 7:00 PM
-        isFavorite: false
-    },
-    {
-        id: 4,
-        artistName: "STELLA ANNING TRIO",
-        genre: "Indie Rock",
-        venueName: "Brunswick Artists' Bar",
-        venueLocation: "Brunswick, 316 Sydney Rd",
-        date: "2026-08-20",
-        time: "20:30",        // 8:30 PM
-        isFavorite: false
-    },
-    {
-        id: 5,
         artistName: "SHINE CAUGHT BLUE",
         genre: "Experimental",
         venueName: "Birramung Marr",
@@ -54,7 +14,7 @@ const gigData = [
         isFavorite: true
     },
     {
-        id: 6,
+        id: 2,
         artistName: "VIVA LA DISCOTECA",
         genre: "Indie Rock",
         venueName: "Brunswick Artists' Bar",
@@ -64,7 +24,7 @@ const gigData = [
         isFavorite: true
     },
     {
-        id: 7,
+        id: 3,
         artistName: "JOSHUA BATTEN BAND",
         genre: "Indie Rock",
         venueName: "Brunswick Artists' Bar",
@@ -74,7 +34,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 8,
+        id: 4,
         artistName: "BRIANNA ELLINGHAM (piano)",
         genre: "Classical",
         venueName: "St Paul's Cathedral",
@@ -84,7 +44,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 9,
+        id: 5,
         artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
         genre: "Indie Rock",
         venueName: "The Merri Bar",
