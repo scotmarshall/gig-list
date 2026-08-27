@@ -5,52 +5,102 @@ const { createApp, ref, computed } = Vue;
 const gigData = [
     {
         id: 1,
-        artistName: "SHINE CAUGHT BLUE",
-        genre: "Experimental",
-        venueName: "Birramung Marr",
-        venueLocation: "Melbourne, Batman Ave",
-        date: "2026-08-21",
-        time: "20:00",        // 8:00 PM
-        isFavorite: true
+        artistName: "Winter Market",
+        genre: "Community",
+        venueName: "CERES Community Environment Park",
+        venueLocation: "Brunswick East, Stewart St & Roberts St",
+        date: "2026-08-29",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
     },
     {
         id: 2,
-        artistName: "VIVA LA DISCOTECA",
-        genre: "Indie Rock",
-        venueName: "Brunswick Artists' Bar",
-        venueLocation: "Brunswick, 316 Sydney Rd",
-        date: "2026-08-21",
-        time: "20:00",        // 8:00 PM
-        isFavorite: true
+        artistName: "Camberwell Market 50th Anniversary",
+        genre: "Community",
+        venueName: "Camberwell Sunday Market",
+        venueLocation: "Camberwell, Market Place",
+        date: "2026-08-30",
+        time: "07:00",        // 7:00 AM
+        isFavorite: false
     },
     {
         id: 3,
-        artistName: "JOSHUA BATTEN BAND",
-        genre: "Indie Rock",
-        venueName: "Brunswick Artists' Bar",
-        venueLocation: "Brunswick, 316 Sydney Rd",
-        date: "2026-08-22",
-        time: "16:30",        // 4:30 PM
+        artistName: "ANGELA DENG (violin) & RHODRI CLARKE (piano)",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-09-02",
+        time: "13:00",        // 1:00 PM
         isFavorite: false
     },
     {
         id: 4,
-        artistName: "BRIANNA ELLINGHAM (piano)",
+        artistName: "STEPHY CAI (piano)",
         genre: "Classical",
         venueName: "St Paul's Cathedral",
         venueLocation: "Melbourne, 200 Flinders St",
-        date: "2026-08-26",
+        date: "2026-09-09",
         time: "13:00",        // 1:00 PM
         isFavorite: false
     },
     {
         id: 5,
-        artistName: "OPEN MIC NIGHT @ THE MERRI BAR",
-        genre: "Indie Rock",
-        venueName: "The Merri Bar",
-        venueLocation: "Preston, 15 Gilbert Road",
-        date: "2026-08-27",
-        time: "19:00",        // 7:00 PM
+        artistName: "MELODY HUANG (piano)",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-09-16",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
+    },
+    {
+        id: 6,
+        artistName: "Free Music",
+        genre: "Classical",
+        venueName: "Melbourne Recital Centre",
+        venueLocation: "Southbank, 31 Sturt St",
+        date: "2026-09-21",
+        time: "12:00",        // 12:00 PM
+        isFavorite: false
+    },
+    {
+        id: 7,
+        artistName: "WESTGARTH ENSEMBLE",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-09-23",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
+    },
+    {
+        id: 8,
+        artistName: "BRIENNE GAWLER (oboe) & NATHAN GLENN (piano)",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-09-30",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
+    },
+    {
+        id: 9,
+        artistName: "Free Music",
+        genre: "Classical",
+        venueName: "Melbourne Recital Centre",
+        venueLocation: "Southbank, 31 Sturt St",
+        date: "2026-10-05",
+        time: "12:00",        // 12:00 PM
+        isFavorite: false
+    },
+    {
+        id: 10,
+        artistName: "Free Music",
+        genre: "Classical",
+        venueName: "Melbourne Recital Centre",
+        venueLocation: "Southbank, 31 Sturt St",
+        date: "2026-11-02",
+        time: "12:00",        // 12:00 PM
         isFavorite: false
     }
 ];
