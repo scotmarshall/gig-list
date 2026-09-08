@@ -5,46 +5,56 @@ const { createApp, ref, computed } = Vue;
 const gigData = [
     {
         id: 1,
-        artistName: "Winter Market",
+        artistName: "THE CUBE ft. Born in a Taxi",
         genre: "Community",
-        venueName: "CERES Community Environment Park",
-        venueLocation: "Brunswick East, Stewart St & Roberts St",
-        date: "2026-08-29",
-        time: "13:00",        // 1:00 PM
+        venueName: "Preston Market",
+        venueLocation: "Preston, 30A The Centreway",
+        date: "2026-09-11",
+        time: "11:00",        // 11:00 AM
         isFavorite: false
     },
     {
         id: 2,
-        artistName: "Camberwell Market 50th Anniversary",
-        genre: "Community",
-        venueName: "Camberwell Sunday Market",
-        venueLocation: "Camberwell, Market Place",
-        date: "2026-08-30",
-        time: "07:00",        // 7:00 AM
+        artistName: "Fuá do Nordeste: A Brazilian Cultural Immersion",
+        genre: "World",
+        venueName: "Bar 303",
+        venueLocation: "Northcote, 303 High Street",
+        date: "2026-09-11",
+        time: "19:00",        // 7:00 PM
         isFavorite: false
     },
     {
         id: 3,
-        artistName: "ANGELA DENG (violin) & RHODRI CLARKE (piano)",
-        genre: "Classical",
-        venueName: "St Paul's Cathedral",
-        venueLocation: "Melbourne, 200 Flinders St",
-        date: "2026-09-02",
-        time: "13:00",        // 1:00 PM
+        artistName: "TEJO D'CRUZ",
+        genre: "Indie",
+        venueName: "Baxter's Lot",
+        venueLocation: "Fitzroy, 296 Brunswick St",
+        date: "2026-09-11",
+        time: "21:00",        // 9:00 PM
         isFavorite: false
     },
     {
         id: 4,
-        artistName: "STEPHY CAI (piano)",
-        genre: "Classical",
-        venueName: "St Paul's Cathedral",
-        venueLocation: "Melbourne, 200 Flinders St",
-        date: "2026-09-09",
-        time: "13:00",        // 1:00 PM
+        artistName: "CERRO. FREDDY GARDENS",
+        genre: "Indie",
+        venueName: "The Toff In Town",
+        venueLocation: "Melbourne, 2f/252 Swanston St",
+        date: "2026-09-11",
+        time: "23:00",        // 11:00 PM
         isFavorite: false
     },
     {
         id: 5,
+        artistName: "RUBY STREET BAND, resident slot, second Sunday monthly",
+        genre: "Indie",
+        venueName: "Goldy's! Tavern",
+        venueLocation: "Collingwood, 66A Gold St",
+        date: "2026-09-13",
+        time: "14:00",        // 2:00 PM
+        isFavorite: false
+    },
+    {
+        id: 6,
         artistName: "MELODY HUANG (piano)",
         genre: "Classical",
         venueName: "St Paul's Cathedral",
@@ -54,17 +64,17 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 6,
+        id: 7,
         artistName: "Free Music",
         genre: "Classical",
         venueName: "Melbourne Recital Centre",
         venueLocation: "Southbank, 31 Sturt St",
         date: "2026-09-21",
         time: "12:00",        // 12:00 PM
-        isFavorite: false
+        isFavorite: true
     },
     {
-        id: 7,
+        id: 8,
         artistName: "WESTGARTH ENSEMBLE",
         genre: "Classical",
         venueName: "St Paul's Cathedral",
@@ -74,7 +84,17 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 8,
+        id: 9,
+        artistName: "Goldy's Community Open Mic with Tim Woodz, last Sunday monthly",
+        genre: "Community",
+        venueName: "Goldy's! Tavern",
+        venueLocation: "Collingwood, 66A Gold St",
+        date: "2026-09-27",
+        time: "14:00",        // 2:00 PM
+        isFavorite: false
+    },
+    {
+        id: 10,
         artistName: "BRIENNE GAWLER (oboe) & NATHAN GLENN (piano)",
         genre: "Classical",
         venueName: "St Paul's Cathedral",
@@ -84,7 +104,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 9,
+        id: 11,
         artistName: "Free Music",
         genre: "Classical",
         venueName: "Melbourne Recital Centre",
@@ -94,7 +114,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 10,
+        id: 12,
         artistName: "Free Music",
         genre: "Classical",
         venueName: "Melbourne Recital Centre",
