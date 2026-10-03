@@ -5,106 +5,6 @@ const { createApp, ref, computed } = Vue;
 const gigData = [
     {
         id: 1,
-        artistName: "THE CUBE ft. Born in a Taxi",
-        genre: "Community",
-        venueName: "Preston Market",
-        venueLocation: "Preston, 30A The Centreway",
-        date: "2026-09-11",
-        time: "11:00",        // 11:00 AM
-        isFavorite: false
-    },
-    {
-        id: 2,
-        artistName: "Fuá do Nordeste: A Brazilian Cultural Immersion",
-        genre: "World",
-        venueName: "Bar 303",
-        venueLocation: "Northcote, 303 High Street",
-        date: "2026-09-11",
-        time: "19:00",        // 7:00 PM
-        isFavorite: false
-    },
-    {
-        id: 3,
-        artistName: "TEJO D'CRUZ",
-        genre: "Indie",
-        venueName: "Baxter's Lot",
-        venueLocation: "Fitzroy, 296 Brunswick St",
-        date: "2026-09-11",
-        time: "21:00",        // 9:00 PM
-        isFavorite: false
-    },
-    {
-        id: 4,
-        artistName: "CERRO. FREDDY GARDENS",
-        genre: "Indie",
-        venueName: "The Toff In Town",
-        venueLocation: "Melbourne, 2f/252 Swanston St",
-        date: "2026-09-11",
-        time: "23:00",        // 11:00 PM
-        isFavorite: false
-    },
-    {
-        id: 5,
-        artistName: "RUBY STREET BAND, resident slot, second Sunday monthly",
-        genre: "Indie",
-        venueName: "Goldy's! Tavern",
-        venueLocation: "Collingwood, 66A Gold St",
-        date: "2026-09-13",
-        time: "14:00",        // 2:00 PM
-        isFavorite: false
-    },
-    {
-        id: 6,
-        artistName: "MELODY HUANG (piano)",
-        genre: "Classical",
-        venueName: "St Paul's Cathedral",
-        venueLocation: "Melbourne, 200 Flinders St",
-        date: "2026-09-16",
-        time: "13:00",        // 1:00 PM
-        isFavorite: false
-    },
-    {
-        id: 7,
-        artistName: "Free Music",
-        genre: "Classical",
-        venueName: "Melbourne Recital Centre",
-        venueLocation: "Southbank, 31 Sturt St",
-        date: "2026-09-21",
-        time: "12:00",        // 12:00 PM
-        isFavorite: true
-    },
-    {
-        id: 8,
-        artistName: "WESTGARTH ENSEMBLE",
-        genre: "Classical",
-        venueName: "St Paul's Cathedral",
-        venueLocation: "Melbourne, 200 Flinders St",
-        date: "2026-09-23",
-        time: "13:00",        // 1:00 PM
-        isFavorite: false
-    },
-    {
-        id: 9,
-        artistName: "Goldy's Community Open Mic with Tim Woodz, last Sunday monthly",
-        genre: "Community",
-        venueName: "Goldy's! Tavern",
-        venueLocation: "Collingwood, 66A Gold St",
-        date: "2026-09-27",
-        time: "14:00",        // 2:00 PM
-        isFavorite: false
-    },
-    {
-        id: 10,
-        artistName: "BRIENNE GAWLER (oboe) & NATHAN GLENN (piano)",
-        genre: "Classical",
-        venueName: "St Paul's Cathedral",
-        venueLocation: "Melbourne, 200 Flinders St",
-        date: "2026-09-30",
-        time: "13:00",        // 1:00 PM
-        isFavorite: false
-    },
-    {
-        id: 11,
         artistName: "Free Music",
         genre: "Classical",
         venueName: "Melbourne Recital Centre",
@@ -114,7 +14,137 @@ const gigData = [
         isFavorite: false
     },
     {
+        id: 2,
+        artistName: "ALESSANDRO PITTORINO (organ)",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-10-07",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
+    },
+    {
+        id: 3,
+        artistName: "HOUSEWARMING",
+        genre: "Indie",
+        venueName: "Arts Centre Melbourne",
+        venueLocation: "Melbourne, 100 St Kilda Rd",
+        date: "2026-10-09",
+        time: "20:00",        // 8:00 PM
+        isFavorite: false
+    },
+    {
+        id: 4,
+        artistName: "DISCO DOWNSTAIRS ft. Steely Ann",
+        genre: "Indie",
+        venueName: "Wax Music Lounge",
+        venueLocation: "Melbourne, Basement, 250 Flinders St",
+        date: "2026-10-09",
+        time: "21:00",        // 9:00 PM
+        isFavorite: false
+    },
+    {
+        id: 5,
+        artistName: "PLASTIC SECTION + THE LOST TONES",
+        genre: "Indie",
+        venueName: "Barton Fink",
+        venueLocation: "Thornbury, 816/818 High St",
+        date: "2026-10-09",
+        time: "21:00",        // 9:00 PM
+        isFavorite: false
+    },
+    {
+        id: 6,
+        artistName: "FRONT BAR SESSIONS ft. Milly Strange",
+        genre: "Indie",
+        venueName: "Corner Hotel",
+        venueLocation: "Richmond, 57 Swan St",
+        date: "2026-10-10",
+        time: "15:30",        // 3:30 PM
+        isFavorite: false
+    },
+    {
+        id: 7,
+        artistName: "IZZY SKINNER. DOVE CREEK, WOODY SAMPSON",
+        genre: "Indie",
+        venueName: "Brunswick Artists` Bar",
+        venueLocation: "Brunswick, 316 Sydney St",
+        date: "2026-10-10",
+        time: "20:30",        // 8:30 PM
+        isFavorite: false
+    },
+    {
+        id: 8,
+        artistName: "CAITLIN AU (piano)",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-10-13",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
+    },
+    {
+        id: 9,
+        artistName: "FRONT BAR SESSIONS ft. Lucky",
+        genre: "Indie",
+        venueName: "Corner Hotel",
+        venueLocation: "Richmond, 57 Swan St",
+        date: "2026-10-17",
+        time: "15:30",        // 3:30 PM
+        isFavorite: false
+    },
+    {
+        id: 10,
+        artistName: "GISELLE BAULCH (soprano), JULIARNA CLARK (mezzo-soprano), and HUGH FULLARTON (piano/chamber organ)",
+        genre: "Classical",
+        venueName: "St Paul's Cathedral",
+        venueLocation: "Melbourne, 200 Flinders St",
+        date: "2026-10-21",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
+    },
+    {
+        id: 11,
+        artistName: "JIB. SASKIA ROBIN, ARLON FARIA",
+        genre: "Indie",
+        venueName: "Brunswick Artists` Bar",
+        venueLocation: "Brunswick, 316 Sydney St",
+        date: "2026-10-22",
+        time: "20:30",        // 8:30 PM
+        isFavorite: false
+    },
+    {
         id: 12,
+        artistName: "KNOCK OFFS",
+        genre: "Indie",
+        venueName: "Abbots Yard",
+        venueLocation: "Abbotsford, 329-341 Victoria St",
+        date: "2026-10-23",
+        time: "17:00",        // 5:00 PM
+        isFavorite: false
+    },
+    {
+        id: 13,
+        artistName: "Free Music",
+        genre: "Jazz",
+        venueName: "Prahran Square",
+        venueLocation: "Prahran, Cato St",
+        date: "2026-10-24",
+        time: "13:00",        // 1:00 PM
+        isFavorite: false
+    },
+    {
+        id: 14,
+        artistName: "THE SIGNAL PATH - ELAKTRONIK",
+        genre: "Electronic",
+        venueName: "Brunswick Artists` Bar",
+        venueLocation: "Brunswick, 316 Sydney St",
+        date: "2026-10-24",
+        time: "20:00",        // 8:00 PM
+        isFavorite: false
+    },
+    {
+        id: 15,
         artistName: "Free Music",
         genre: "Classical",
         venueName: "Melbourne Recital Centre",
