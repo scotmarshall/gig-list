@@ -5,96 +5,6 @@ const { createApp, ref, computed } = Vue;
 const gigData = [
     {
         id: 1,
-        artistName: "Free Music",
-        genre: "Classical",
-        venueName: "Melbourne Recital Centre",
-        venueLocation: "Southbank, 31 Sturt St",
-        date: "2026-10-05",
-        time: "12:00",        // 12:00 PM
-        isFavorite: false
-    },
-    {
-        id: 2,
-        artistName: "ALESSANDRO PITTORINO (organ)",
-        genre: "Classical",
-        venueName: "St Paul's Cathedral",
-        venueLocation: "Melbourne, 200 Flinders St",
-        date: "2026-10-07",
-        time: "13:00",        // 1:00 PM
-        isFavorite: false
-    },
-    {
-        id: 3,
-        artistName: "HOUSEWARMING",
-        genre: "Indie",
-        venueName: "Arts Centre Melbourne",
-        venueLocation: "Melbourne, 100 St Kilda Rd",
-        date: "2026-10-09",
-        time: "20:00",        // 8:00 PM
-        isFavorite: false
-    },
-    {
-        id: 4,
-        artistName: "DISCO DOWNSTAIRS ft. Steely Ann",
-        genre: "Indie",
-        venueName: "Wax Music Lounge",
-        venueLocation: "Melbourne, Basement, 250 Flinders St",
-        date: "2026-10-09",
-        time: "21:00",        // 9:00 PM
-        isFavorite: false
-    },
-    {
-        id: 5,
-        artistName: "PLASTIC SECTION + THE LOST TONES",
-        genre: "Indie",
-        venueName: "Barton Fink",
-        venueLocation: "Thornbury, 816/818 High St",
-        date: "2026-10-09",
-        time: "21:00",        // 9:00 PM
-        isFavorite: false
-    },
-    {
-        id: 6,
-        artistName: "FRONT BAR SESSIONS ft. Milly Strange",
-        genre: "Indie",
-        venueName: "Corner Hotel",
-        venueLocation: "Richmond, 57 Swan St",
-        date: "2026-10-10",
-        time: "15:30",        // 3:30 PM
-        isFavorite: false
-    },
-    {
-        id: 7,
-        artistName: "IZZY SKINNER. DOVE CREEK, WOODY SAMPSON",
-        genre: "Indie",
-        venueName: "Brunswick Artists` Bar",
-        venueLocation: "Brunswick, 316 Sydney St",
-        date: "2026-10-10",
-        time: "20:30",        // 8:30 PM
-        isFavorite: false
-    },
-    {
-        id: 8,
-        artistName: "CAITLIN AU (piano)",
-        genre: "Classical",
-        venueName: "St Paul's Cathedral",
-        venueLocation: "Melbourne, 200 Flinders St",
-        date: "2026-10-13",
-        time: "13:00",        // 1:00 PM
-        isFavorite: false
-    },
-    {
-        id: 9,
-        artistName: "FRONT BAR SESSIONS ft. Lucky",
-        genre: "Indie",
-        venueName: "Corner Hotel",
-        venueLocation: "Richmond, 57 Swan St",
-        date: "2026-10-17",
-        time: "15:30",        // 3:30 PM
-        isFavorite: false
-    },
-    {
-        id: 10,
         artistName: "GISELLE BAULCH (soprano), JULIARNA CLARK (mezzo-soprano), and HUGH FULLARTON (piano/chamber organ)",
         genre: "Classical",
         venueName: "St Paul's Cathedral",
@@ -104,7 +14,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 11,
+        id: 2,
         artistName: "JIB. SASKIA ROBIN, ARLON FARIA",
         genre: "Indie",
         venueName: "Brunswick Artists` Bar",
@@ -114,7 +24,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 12,
+        id: 3,
         artistName: "KNOCK OFFS",
         genre: "Indie",
         venueName: "Abbots Yard",
@@ -124,7 +34,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 13,
+        id: 4,
         artistName: "Free Music",
         genre: "Jazz",
         venueName: "Prahran Square",
@@ -134,7 +44,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 14,
+        id: 5,
         artistName: "THE SIGNAL PATH - ELAKTRONIK",
         genre: "Electronic",
         venueName: "Brunswick Artists` Bar",
@@ -144,7 +54,7 @@ const gigData = [
         isFavorite: false
     },
     {
-        id: 15,
+        id: 6,
         artistName: "Free Music",
         genre: "Classical",
         venueName: "Melbourne Recital Centre",
